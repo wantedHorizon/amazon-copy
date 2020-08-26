@@ -3,13 +3,16 @@
     --bg-dark-1: #444;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 
-html, body {
+html,
+body {
     font-size: 62.5%;
     font-family: 'Amazon Ember', sans-serif, Arial, Helvetica;
 }
@@ -80,7 +83,8 @@ a {
     border: 1px dashed;
 }
 
-.fa-star, .fa-star-half-alt {
+.fa-star,
+.fa-star-half-alt {
     color: #F3B002;
     /* border: 1px solid black; */
 }
@@ -209,6 +213,23 @@ li.toolbar__flag {
     color: white;
     display: flex;
     font-weight: 800;
+}
+
+.toolbar__cart .img {
+    background: url('../img/icon/cart.png') center center/cover;
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+.toolbar__cart__amount {
+    position: absolute;
+    background: #131921;
+    color: #F3B002;
+    top: 0;
+    left: 40%;
+    width: 50%;
+    text-align: center;
 }
 
 .toolbar__cart p {
